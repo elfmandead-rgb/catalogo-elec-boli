@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo Tecnológico</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .img-container { height: 200px; overflow: hidden; display: flex; align-items: center; justify-content: center; background: white; }
+        .img-container img { max-height: 90%; width: auto; object-fit: contain; }
+        .btn-flotante { position: fixed; bottom: 25px; right: 25px; z-index: 100; transition: all 0.3s ease; }
+        .btn-flotante:hover { transform: scale(1.1); }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-900 font-sans leading-tight">
+
+    <header class="bg-indigo-900 text-white py-12 px-6 text-center shadow-lg border-b-4 border-green-500">
+        <h1 class="text-4xl font-bold uppercase tracking-wider">Mi Tienda Tech</h1>
+        <p class="mt-2 text-indigo-200 text-lg">Explora nuestras ofertas y modelos disponibles</p>
+        
+        <div class="mt-8">
+            <a href="https://wa.me/59165689097?text=Hola! Vi tu catálogo y me interesa hacer un pedido." 
+               class="inline-flex items-center bg-green-500 hover:bg-green-600 text-white text-xl font-bold py-4 px-10 rounded-full transition-all transform hover:scale-105 shadow-2xl">
+                <i class="fab fa-whatsapp text-2xl mr-3"></i> HACE TU PEDIDO AQUÍ
+            </a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+            
+            <div class="bg-white rounded-2xl shadow-md border border-gray-200 overflow-hidden flex flex-col">
+                <div class="img-container"><img src="https://i.postimg.cc/LhkKKhrr/Whats-App-Image-2026-03-10-at-17-50-15.jpg"></div>
+                <div class="p-5 flex-grow">
+                    <h3 class="font-bold text-gray-800 text-lg border-b pb-2">Kit Mouse & Teclado BT</h3>
+                    <ul class="mt-3 text-sm text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Inalámbrico Bluetooth</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Carga Tipo-C</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Alcance 10 metros</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>150h de autonomía</li>
+                    </ul>
+                </div>
+                <div class="p-4 bg-gray-50 text-center border-t">
+                    <p class="text-2xl font-black text-indigo-700">120 bs</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-md border border-gray-200 overflow-hidden flex flex-col">
+                <div class="img-container"><img src="https://i.postimg.cc/XXKSSXTm/Whats-App-Image-2026-03-10-at-17-49-25.jpg"></div>
+                <div class="p-5 flex-grow">
+                    <h3 class="font-bold text-gray-800 text-lg border-b pb-2">Parlante Kimiso KMS-M11</h3>
+                    <ul class="mt-3 text-sm text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Potencia real de 5W</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>BT, USB, MicroSD, Radio FM</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Puerto de carga Tipo-C</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Compacto y portátil</li>
+                    </ul>
+                </div>
+                <div class="p-4 bg-gray-50 text-center border-t">
+                    <p class="text-2xl font-black text-indigo-700">75 bs</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-md border border-gray-200 overflow-hidden flex flex-col">
+                <div class="img-container"><img src="https://i.postimg.cc/mh3ffh0K/Whats-App-Image-2026-03-10-at-17-46-10.jpg"></div>
+                <div class="p-5 flex-grow">
+                    <h3 class="font-bold text-gray-800 text-lg border-b pb-2">Audífonos Ewtto Pro</h3>
+                    <ul class="mt-3 text-sm text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>18h de música continua</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Bluetooth 5.3 estable</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Sonido envolvente Hi-Fi</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Entrada Tipo-C</li>
+                    </ul>
+                </div>
+                <div class="p-4 bg-gray-50 text-center border-t">
+                    <p class="text-2xl font-black text-indigo-700">95 bs</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-md border border-gray-200 overflow-hidden flex flex-col">
+                <div class="img-container"><img src="https://i.postimg.cc/Hj0DDjfK/Whats-App-Image-2026-03-10-at-17-42-47.jpg"></div>
+                <div class="p-5 flex-grow">
+                    <h3 class="font-bold text-gray-800 text-lg border-b pb-2">Audífonos P47 Wireless</h3>
+                    <ul class="mt-3 text-sm text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Multifunción: Radio y MicroSD</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Micrófono para llamadas</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Diseño plegable</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Uso con cable o BT</li>
+                    </ul>
+                </div>
+                <div class="p-4 bg-gray-50 text-center border-t">
+                    <p class="text-2xl font-black text-indigo-700">55 bs</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-md border border-gray-200 overflow-hidden flex flex-col">
+                <div class="img-container"><img src="https://i.postimg.cc/s1Pdd1tk/Whats-App-Image-2026-03-10-at-17-41-36-(2).jpg"></div>
+                <div class="p-5 flex-grow">
+                    <h3 class="font-bold text-gray-800 text-lg border-b pb-2">Audífonos M10 TWS</h3>
+                    <ul class="mt-3 text-sm text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Estuche con Powerbank</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Pantalla LED de batería</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Resistente a salpicaduras</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Bluetooth 5.3</li>
+                    </ul>
+                </div>
+                <div class="p-4 bg-gray-50 text-center border-t">
+                    <p class="text-2xl font-black text-indigo-700">55 bs</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-md border border-gray-200 overflow-hidden flex flex-col">
+                <div class="img-container"><img src="https://i.postimg.cc/s1Pdd1kd/Whats-App-Image-2026-03-10-at-17-41-36-(1).jpg"></div>
+                <div class="p-5 flex-grow">
+                    <h3 class="font-bold text-gray-800 text-lg border-b pb-2">Audífonos Gamer M28</h3>
+                    <ul class="mt-3 text-sm text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Luces LED RGB</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Modo Baja Latencia</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Carga Tipo-C</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Bajos potentes</li>
+                    </ul>
+                </div>
+                <div class="p-4 bg-gray-50 text-center border-t">
+                    <p class="text-2xl font-black text-indigo-700">65 bs</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-md border border-gray-200 overflow-hidden flex flex-col">
+                <div class="img-container"><img src="https://i.postimg.cc/Z0Ptt0Gk/Whats-App-Image-2026-03-10-at-17-41-36.jpg"></div>
+                <div class="p-5 flex-grow">
+                    <h3 class="font-bold text-gray-800 text-lg border-b pb-2">Audífonos Stereo 5.4</h3>
+                    <ul class="mt-3 text-sm text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Versión Bluetooth 5.4</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Cancelación de ruido</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Material imantado premium</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>4-5h de batería</li>
+                    </ul>
+                </div>
+                <div class="p-4 bg-gray-50 text-center border-t">
+                    <p class="text-2xl font-black text-indigo-700">65 bs</p>
+                </div>
+            </div>
+
+            <div class="product-card bg-white rounded-2xl shadow-md border border-gray-200 overflow-hidden flex flex-col">
+                <div class="img-container"><img src="https://i.postimg.cc/WtmLLtQH/Whats-App-Image-2026-03-10-at-19-11-49.jpg"></div>
+                <div class="p-5 flex-grow">
+                    <h3 class="font-bold text-gray-800 text-lg border-b pb-2">Audífonos Gamer X15</h3>
+                    <ul class="mt-3 text-sm text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Diseño Mini compacto</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Luces LED dinámicas</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Pantalla LED de carga</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Carga ultra rápida</li>
+                    </ul>
+                </div>
+                <div class="p-4 bg-gray-50 text-center border-t">
+                    <p class="text-2xl font-black text-indigo-700">70 bs</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <a href="https://wa.me/59165689097?text=Hola! Me interesa hacer un pedido de tu catálogo." class="btn-flotante bg-green-500 text-white p-5 rounded-full shadow-2xl">
+        <i class="fab fa-whatsapp text-3xl"></i>
+    </a>
+
+    <footer class="bg-indigo-950 text-gray-400 py-12 text-center border-t-4 border-green-500">
+        <p class="text-white font-bold uppercase tracking-widest text-lg">Mi Tienda Tech</p>
+        <p class="text-sm mt-2">Productos con garantía y envíos rápidos</p>
+        <p class="text-xs mt-8 opacity-50">© 2026 Catálogo Digital</p>
+    </footer>
+
+</body>
+</html>
